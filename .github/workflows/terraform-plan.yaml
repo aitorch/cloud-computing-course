@@ -8,7 +8,9 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v3
+    - name: Setup Terraform
+      uses: hashicorp/setup-terraform@v1
     - name: Terraform init
       run: |
-        apt install terraform -y
+        sudo apt install terraform -y
         echo "Hola!"
