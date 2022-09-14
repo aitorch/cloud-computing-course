@@ -1,6 +1,6 @@
 locals {
   apps = {
-    helloapp = "gcr.io/cloudrun/hello"
+    helloapp  = "gcr.io/cloudrun/hello"
     helloapp2 = "europe-west1-docker.pkg.dev/cloud-comp-101/examples/hello"
   }
   apis = [
