@@ -11,6 +11,4 @@ jobs:
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@v1
     - name: Terraform init
-      run: |
-        sudo apt install terraform -y
-        echo "Hola!"
+      run: terraform init
