@@ -1,0 +1,14 @@
+name: Terraform
+on:
+  pull_request:
+jobs:
+  terraform:
+    name: Terraform
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+    - name: Terraform init
+      run: |
+        apt install terraform -y
+        echo "Hola!"
